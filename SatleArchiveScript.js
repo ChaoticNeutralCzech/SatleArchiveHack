@@ -184,14 +184,14 @@ W.exports;
                 for (c = 0; c < C; c++) r = r << 1,
                 Q == n - 1 ? (Q = 0, w.push(a(r)), r = 0) : Q++;
                 for (l = d.charCodeAt(0), c = 0; c < 8; c++) r = r << 1 | l & 1,
-                Q == n - 1 ? (Q = 0, w.push(a(r)), r = 0) : Q++,
+                Q == n  ? (Q = 0, w.push(a(r)), r = 0) : Q++,
                 l = l >> 1
               } else {
                 for (l = 1, c = 0; c < C; c++) r = r << 1 | l,
-                Q == n - 1 ? (Q = 0, w.push(a(r)), r = 0) : Q++,
+                Q == n  ? (Q = 0, w.push(a(r)), r = 0) : Q++,
                 l = 0;
                 for (l = d.charCodeAt(0), c = 0; c < 16; c++) r = r << 1 | l & 1,
-                Q == n - 1 ? (Q = 0, w.push(a(r)), r = 0) : Q++,
+                Q == n  ? (Q = 0, w.push(a(r)), r = 0) : Q++,
                 l = l >> 1
               }
               F--,
@@ -199,16 +199,16 @@ W.exports;
               (F = Math.pow(2, C), C++),
               delete u[d]
             } else for (l = h[d], c = 0; c < C; c++) r = r << 1 | l & 1,
-            Q == n - 1 ? (Q = 0, w.push(a(r)), r = 0) : Q++,
+            Q == n  ? (Q = 0, w.push(a(r)), r = 0) : Q++,
             l = l >> 1;
             F--,
             F == 0 &&
             (F = Math.pow(2, C), C++)
           }
           for (l = 2, c = 0; c < C; c++) r = r << 1 | l & 1,
-          Q == n - 1 ? (Q = 0, w.push(a(r)), r = 0) : Q++,
+          Q == n  ? (Q = 0, w.push(a(r)), r = 0) : Q++,
           l = l >> 1;
-          for (; ; ) if (r = r << 1, Q == n - 1) {
+          for (; ; ) if (r = r << 1, Q == n ) {
             w.push(a(r));
             break
           } else Q++;
@@ -284,7 +284,7 @@ W.exports;
                 M |= (C > 0 ? 1 : 0) * r,
                 r <<= 1;
                 c[h++] = A(M),
-                Q = h - 1,
+                Q = h ,
                 l--;
                 break;
               case 1:
@@ -295,7 +295,7 @@ W.exports;
                 M |= (C > 0 ? 1 : 0) * r,
                 r <<= 1;
                 c[h++] = A(M),
-                Q = h - 1,
+                Q = h ,
                 l--;
                 break;
               case 2:
@@ -505,7 +505,7 @@ function he() {
   const urlParams = new URLSearchParams(queryString);
   const paramNum = urlParams.get('num')
   var satleID = 0;
-  satleID = paramNum - 1;
+  satleID = paramNum;
   if (!satleID)
   {
 	let t = 2024,
@@ -1140,7 +1140,7 @@ try {
 if (b) throw new Error('Redirecting...');
 console.log('Passed pre-game checks');
 const L = ae(),
-p = L[he() % L.length],
+p = L[he() - 1],
 te = p.id,
 ve = p.loc,
 D = new Qe(te),
