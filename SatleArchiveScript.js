@@ -504,8 +504,8 @@ function he() {
   console.log(queryString);
   const urlParams = new URLSearchParams(queryString);
   const paramNum = urlParams.get('num')
-  let satleID = 0;
-  satleID = paramNum;
+  var satleID = 0;
+  satleID = paramNum - 1;
   if (!satleID)
   {
 	let t = 2024,
