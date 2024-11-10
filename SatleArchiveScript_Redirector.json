@@ -1,0 +1,23 @@
+{
+    "createdBy": "chaoticneutralczech",
+    "createdAt": "2024-11-10T17:12:08.378Z",
+    "redirects": [
+        {
+            "description": "Satle",
+            "exampleUrl": "https://satle.ca/assets/index-*.js",
+            "exampleResult": "https://chaoticneutralczech.github.io/SatleArchiveHack/SatleArchiveScript.js",
+            "error": null,
+            "includePattern": "https://satle.ca/assets/index-f0C0BNaG.js",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://chaoticneutralczech.github.io/SatleArchiveHack/SatleArchiveScript.js",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "script"
+            ]
+        }
+    ]
+}
